@@ -1,2 +1,5 @@
-# QRS-Detector
-Implementation and Design of QRS Detector based on Pan-Tompkins Algorithm
+# Implementation and Design of QRS Detector based on Pan-Tompkins Algorithm
+
+QRS waves are nothing but the Q wave, R wave, and S wave combinations also known as ventricular depolarization. There are multiple ways to detect QRS waves in ECG (Electrocardiograph Signals). This paper discusses one such method called the Pan-Tompkins algorithm implemented in python to detect QRS waves in ECG signals. This feature helps measure the heart rate easily as QRS waves are the main spikes visible in ECG signals.
+In this paper, we implement the Pan-Tompkins proposed algorithm to detect QRS peak from ECG signals based on IEEE Paper by Pan and Tompkins ("Real Time QRS Detector"). We consider the raw ECG signals data taken from the GitHub repository shared below as an URL as an input to our detector. https://github.com/KChen89/QRS-detection/blob/master/
+Total of 6030 ECG measurements were considered. We know that there might be noise associated with ECG signals when recorded. To eliminate the measurement noise from the signal, we subject our data through two main stages namely filtering and thresholding.
